@@ -13,7 +13,13 @@ public class TestReference {
         System.out.println("The balance in the first account is: " + firsAccount.balance);
         System.out.println("The balance in the second account is: " + secondAccount.balance);
 
+        //when we add funds to the second account this will also be reflecting in the first account
+        //as they are both pointing at the same space in memory
         secondAccount.balance += 400;
         System.out.println("The balance on the first account is: " + firsAccount.balance);
+
+        //we can see that the 2 variables are pointing to the same space in memory
+        System.out.println(firsAccount);
+        System.out.println(secondAccount);
     }
 }
