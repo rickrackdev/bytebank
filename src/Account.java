@@ -3,4 +3,8 @@ class Account{
    int agency;
    int number;
     String owner;
+
+    void deposit(double value ){
+
+    }
 }
