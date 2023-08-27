@@ -2,7 +2,7 @@ class Account {
     double balance;
     int agency;
     int number;
-    String owner;
+    Client owner;
 
     //deposit does not return a value this is established by the type of method
     public void deposit(double balance) {

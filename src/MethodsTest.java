@@ -18,5 +18,16 @@ public class MethodsTest {
         }
         System.out.println(myAccount.balance);
         System.out.println(accountJimena.balance + " jimena");
+
+        Client diego = new Client();
+        diego.name = "Diego";
+        diego.document = "428948";
+        diego.telephone = "41284242";
+
+        Account accountDiego = new Account();
+        accountDiego.agency = 1;
+        accountDiego.owner = diego;
+        System.out.println(accountDiego.owner.document);
+
     }
 }
