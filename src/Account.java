@@ -2,7 +2,7 @@ class Account {
     private double balance;
     private int agency;
     private int number;
-    Client owner;
+    private Client owner;
 
     //deposit does not return a value this is established by the type of method
     public void deposit(double balance) {
@@ -45,8 +45,15 @@ class Account {
             this.agency = agency;
         }
     }
-
     public void setNumber(int number){
         this.number = number;
+    }
+
+    public void setOwner(Client owner) {
+        this.owner = owner;
+    }
+
+    public Client getOwner() {
+        return owner;
     }
 }

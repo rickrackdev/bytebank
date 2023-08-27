@@ -2,7 +2,7 @@ public class MethodsTest {
 
     public static void main (String[] args){
         Account myAccount = new Account();
-        myAccount.balance = 300;
+        myAccount.deposit(300);
         myAccount.deposit(200);
         System.out.println(myAccount.getBalance());
 
@@ -20,10 +20,10 @@ public class MethodsTest {
         System.out.println(accountJimena.getBalance() + " jimena");
 
         Account accountDiego = new Account();
-        accountDiego.agency = 1;
+        accountDiego.setAgency(1);
         accountDiego.owner = new Client();
-        accountDiego.owner.name = "Diego";
-        System.out.println(accountDiego.owner.name);
+        accountDiego.owner.setName("Diego");
+        System.out.println(accountDiego.owner.getName());
 
     }
 }
